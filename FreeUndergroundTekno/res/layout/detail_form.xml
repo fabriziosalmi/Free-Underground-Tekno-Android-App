@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/ScrollView01"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent" 
+android:background="@android:color/white"
+>
+	
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:padding="10dp" 
+	    >
+	 
+	     	
+	     <TextView
+	         android:id="@+id/textViewMessage"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:text="Your message"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <EditText
+	         android:id="@+id/editTextMessage"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:minLines="3" 
+	         android:layout_below="@+id/textViewMessage"
+	         android:layout_alignParentLeft="true"
+	         />
+	 
+	      <TextView
+	         android:id="@+id/textViewPrivacy"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:layout_below="@+id/editTextMessage"
+	         android:text="Private Scrib"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <ToggleButton
+	         android:id="@+id/toggleButtonPrivacy"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/editTextMessage"
+	         android:layout_alignParentRight="true"
+	         />
+	     
+	     
+	     <TextView
+	         android:id="@+id/textViewTo"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:layout_below="@+id/textViewPrivacy"
+	         android:text="To"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <EditText
+	         android:id="@+id/editTextTo"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/textViewTo"
+	         android:layout_alignParentLeft="true"
+	         />
+	 
+	     <TextView
+	         android:id="@+id/textViewLocation"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	          android:layout_below="@+id/editTextTo"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:text="Location"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <EditText
+	         android:id="@+id/editTextLocation"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/textViewLocation"
+	         android:layout_alignParentLeft="true"
+	         />
+	     
+	     <TextView
+	         android:id="@+id/textViewCategory"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	          android:layout_below="@+id/editTextLocation"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:text="Choose a category"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <EditText
+	         android:id="@+id/editTextCategory"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/textViewCategory"
+	         android:layout_alignParentLeft="true"
+	         />
+	     
+	     <TextView
+	         android:id="@+id/textViewDate"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	          android:layout_below="@+id/editTextCategory"
+	         android:layout_marginTop="15dp"
+	         android:layout_marginLeft="5dp"
+	         android:text="Choose a date"
+	         android:textAppearance="?android:attr/textAppearanceSmall" />
+	 
+	     <EditText
+	         android:id="@+id/editTextDate"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/textViewDate"
+	         android:layout_alignParentLeft="true"
+	         android:inputType ="date"
+	         />
+	     
+	     <Button
+	         android:id="@+id/btnSubmit"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@+id/editTextDate"
+	         android:text="Scribb it" />
+	 
+	</RelativeLayout>
+</ScrollView>
